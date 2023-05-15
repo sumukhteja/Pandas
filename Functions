@@ -102,3 +102,26 @@ df.dropna(subset=[column]): Drops rows with missing values in a specific column.
 df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
 df.to_excel(): Writes the DataFrame to an Excel file.
 df.to_sql(): Writes the DataFrame to a SQL database.
+
+Useful Functions Continued:
+df.to_excel(): Writes the DataFrame to an Excel file.
+df.to_sql(): Writes the DataFrame to a SQL database.
+df.sample(n): Returns a random sample of n rows from the DataFrame.
+df.explode(column): Expands a column with lists or arrays into multiple rows.
+df.at[row, column]: Accesses a scalar value in the DataFrame using label-based indexing.
+df.iat[row, column]: Accesses a scalar value in the DataFrame using integer-based indexing.
+df.memory_usage(): Returns the memory usage of each column in the DataFrame.
+df.replace(to_replace, value): Replaces specified values in the DataFrame with a new value.
+df.dropna(subset=[column]): Drops rows with missing values in a specific column.
+df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
+df.nunique(): Returns the number of unique values in each column of the DataFrame.
+df.value_counts(): Returns the count of unique values in a column.
+df.cumsum(): Computes the cumulative sum of values in each column.
+df.cumprod(): Computes the cumulative product of values in each column.
+df.cummax(): Computes the cumulative maximum value in each column.
+df.cummin(): Computes the cumulative minimum value in each column.
+df.melt(): Unpivots a DataFrame from wide format to long format.
+df.pivot(): Pivots a DataFrame from long format to wide format based on unique values in a column.
+df.iterrows(): Iterates over the rows of the DataFrame as (index, Series) pairs.
+df.itertuples(): Iterates over the rows of the DataFrame as namedtuples.
+df.style: Provides styling options to enhance the visual representation of the DataFrame.
