@@ -125,3 +125,13 @@ df.pivot(): Pivots a DataFrame from long format to wide format based on unique v
 df.iterrows(): Iterates over the rows of the DataFrame as (index, Series) pairs.
 df.itertuples(): Iterates over the rows of the DataFrame as namedtuples.
 df.style: Provides styling options to enhance the visual representation of the DataFrame.
+df.merge(): Merges two DataFrames based on common columns or indexes.
+df.pivot_table(): Creates a spreadsheet-style pivot table based on the DataFrame.
+df.stack(): Pivots columns into rows, creating a multi-level index.
+df.unstack(): Pivots rows into columns, creating a multi-level column index.
+df.duplicated(): Identifies duplicate rows in a DataFrame.
+df.drop_duplicates(): Removes duplicate rows from a DataFrame.
+df.corr(): Computes pairwise correlation of columns, indicating the strength and direction of the relationship between variables.
+df.resample(): Resamples time series data based on a specified frequency (e.g., daily, monthly).
+df.rolling(): Computes rolling window calculations on time series data (e.g., rolling mean, rolling sum).
+df.groupby().transform(): Applies a function to each group and returns a DataFrame with the transformed values aligned with the original DataFrame.
