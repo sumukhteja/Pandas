@@ -1,9 +1,8 @@
+**Basic Operations:**
 **Reading a CSV file into a DataFrame:** df = pd.read_csv('data.csv')
-
 **Writing a DataFrame to a file:** df.to_csv('output.csv', index=False) # Set index=False to exclude row numbers
 
-**BASIC OPERATIONS:
-**Inspecting data:
+**Inspecting data:**
 - df.head(n): Returns the first n rows of the DataFrame.
 - df.tail(n): Returns the last n rows of the DataFrame.
 - df.info(): Provides a summary of the DataFrame, including the data types and number of non-null values in each column.
