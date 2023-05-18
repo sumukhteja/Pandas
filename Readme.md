@@ -58,64 +58,64 @@
 
 **Handling Categorical Data:**
 - df.get_dummies(): Converts categorical variables into dummy/indicator variables
-df.astype('category'): Converts a column to the category data type, which can be useful for memory optimization and performing categorical operations.
+- df.astype('category'): Converts a column to the category data type, which can be useful for memory optimization and performing categorical operations.
 
 **String Operations:**
-df.str.contains(): Checks if each string element in a column contains a specified substring.
-df.str.extract(): Extracts matching patterns from string columns using regular expressions.
-df.str.replace(): Replaces substrings in a string column with a specified value.
+- df.str.contains(): Checks if each string element in a column contains a specified substring.
+- df.str.extract(): Extracts matching patterns from string columns using regular expressions.
+- df.str.replace(): Replaces substrings in a string column with a specified value.
 
 **Time Series Analysis:**
-pd.to_datetime(): Converts a column to the datetime data type for time series analysis.
-df.resample(): Resamples time series data based on a specified frequency (e.g., daily, monthly).
-df.rolling(): Computes rolling window calculations on time series data (e.g., rolling mean, rolling sum).
+- pd.to_datetime(): Converts a column to the datetime data type for time series analysis.
+- df.resample(): Resamples time series data based on a specified frequency (e.g., daily, monthly).
+- df.rolling(): Computes rolling window calculations on time series data (e.g., rolling mean, rolling sum).
 
 **Handling Duplicate Data:**
-df.duplicated(): Identifies duplicate rows in a DataFrame.
-df.drop_duplicates(): Removes duplicate rows from a DataFrame.
+- df.duplicated(): Identifies duplicate rows in a DataFrame.
+- df.drop_duplicates(): Removes duplicate rows from a DataFrame.
 
 **Advanced Indexing and Selection:**
-df.set_index(): Sets one or more columns as the index of the DataFrame.
-df.reset_index(): Resets the index of the DataFrame to the default integer index.
-df.nlargest(): Returns the n largest values from a column in a DataFrame.
-df.nsmallest(): Returns the n smallest values from a column in a DataFrame.
+- df.set_index(): Sets one or more columns as the index of the DataFrame.
+- df.reset_index(): Resets the index of the DataFrame to the default integer index.
+- df.nlargest(): Returns the n largest values from a column in a DataFrame.
+- df.nsmallest(): Returns the n smallest values from a column in a DataFrame.
 
 **Useful Functions:**
-df.applymap(function): Applies a function element-wise to a DataFrame.
-df.sample(n): Returns a random sample of n rows from the DataFrame.
-df.dtypes: Returns the data types of each column in the DataFrame.
-df.dropna(axis): Drops missing values along a specified axis (rows or columns).
-df.pivot_table(): Creates a spreadsheet-style pivot table based on the DataFrame.
-df.explode(column): Expands a column with lists or arrays into multiple rows.
-df.at[row, column]: Accesses a scalar value in the DataFrame using label-based indexing.
-df.iat[row, column]: Accesses a scalar value in the DataFrame using integer-based indexing.
-df.memory_usage(): Returns the memory usage of each column in the DataFrame.
-df.replace(to_replace, value): Replaces specified values in the DataFrame with a new value.
-df.dropna(subset=[column]): Drops rows with missing values in a specific column.
-df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
-df.to_excel(): Writes the DataFrame to an Excel file.
-df.to_sql(): Writes the DataFrame to a SQL database.
+- df.applymap(function): Applies a function element-wise to a DataFrame.
+- df.sample(n): Returns a random sample of n rows from the DataFrame.
+- df.dtypes: Returns the data types of each column in the DataFrame.
+- df.dropna(axis): Drops missing values along a specified axis (rows or columns).
+- df.pivot_table(): Creates a spreadsheet-style pivot table based on the DataFrame.
+- df.explode(column): Expands a column with lists or arrays into multiple rows.
+- df.at[row, column]: Accesses a scalar value in the DataFrame using label-based indexing.
+- df.iat[row, column]: Accesses a scalar value in the DataFrame using integer-based indexing.
+- df.memory_usage(): Returns the memory usage of each column in the DataFrame.
+- df.replace(to_replace, value): Replaces specified values in the DataFrame with a new value.
+- df.dropna(subset=[column]): Drops rows with missing values in a specific column.
+- df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
+- df.to_excel(): Writes the DataFrame to an Excel file.
+- df.to_sql(): Writes the DataFrame to a SQL database.
 
 **Useful Functions Continued:**
-df.to_excel(): Writes the DataFrame to an Excel file.
-df.to_sql(): Writes the DataFrame to a SQL database.
-df.sample(n): Returns a random sample of n rows from the DataFrame.
-df.explode(column): Expands a column with lists or arrays into multiple rows.
-df.at[row, column]: Accesses a scalar value in the DataFrame using label-based indexing.
-df.iat[row, column]: Accesses a scalar value in the DataFrame using integer-based indexing.
-df.memory_usage(): Returns the memory usage of each column in the DataFrame.
-df.replace(to_replace, value): Replaces specified values in the DataFrame with a new value.
-df.dropna(subset=[column]): Drops rows with missing values in a specific column.
-df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
-df.nunique(): Returns the number of unique values in each column of the DataFrame.
-df.value_counts(): Returns the count of unique values in a column.
-df.cumsum(): Computes the cumulative sum of values in each column.
-df.cumprod(): Computes the cumulative product of values in each column.
-df.cummax(): Computes the cumulative maximum value in each column.
-df.cummin(): Computes the cumulative minimum value in each column.
-df.diff(): Computes the difference between consecutive values in each column.
-df.pct_change(): Computes the percentage change between consecutive values in each column.
-df.rank(): Computes the rank of values in each column.
-df.sort_index(): Sorts the DataFrame by the row index or column names.
-df.melt(): Unpivots a DataFrame from wide format to long format.
-df.pivot(): Reshape a DataFrame from long format to wide format based on unique values in a column.
+- df.to_excel(): Writes the DataFrame to an Excel file.
+- df.to_sql(): Writes the DataFrame to a SQL database.
+- df.sample(n): Returns a random sample of n rows from the DataFrame.
+- df.explode(column): Expands a column with lists or arrays into multiple rows.
+- df.at[row, column]: Accesses a scalar value in the DataFrame using label-based indexing.
+- df.iat[row, column]: Accesses a scalar value in the DataFrame using integer-based indexing.
+- df.memory_usage(): Returns the memory usage of each column in the DataFrame.
+- df.replace(to_replace, value): Replaces specified values in the DataFrame with a new value.
+- df.dropna(subset=[column]): Drops rows with missing values in a specific column.
+- df.round(decimals): Rounds the values in the DataFrame to the specified number of decimals.
+- df.nunique(): Returns the number of unique values in each column of the DataFrame.
+- df.value_counts(): Returns the count of unique values in a column.
+- df.cumsum(): Computes the cumulative sum of values in each column.
+- df.cumprod(): Computes the cumulative product of values in each column.
+- df.cummax(): Computes the cumulative maximum value in each column.
+- df.cummin(): Computes the cumulative minimum value in each column.
+- df.diff(): Computes the difference between consecutive values in each column.
+- df.pct_change(): Computes the percentage change between consecutive values in each column.
+- df.rank(): Computes the rank of values in each column.
+- df.sort_index(): Sorts the DataFrame by the row index or column names.
+- df.melt(): Unpivots a DataFrame from wide format to long format.
+- df.pivot(): Reshape a DataFrame from long format to wide format based on unique values in a column.
