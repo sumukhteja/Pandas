@@ -1,6 +1,6 @@
 **Basic Operations:**
-- **Reading a CSV file into a DataFrame:** df = pd.read_csv('data.csv')
-- **Writing a DataFrame to a file:** df.to_csv('output.csv', index=False) # Set index=False to exclude row numbers
+- Reading a CSV file into a DataFrame: df = pd.read_csv('data.csv')
+- Writing a DataFrame to a file: df.to_csv('output.csv', index=False) # Set index=False to exclude row numbers
 
 **Inspecting data:**
 - df.head(n): Returns the first n rows of the DataFrame.
